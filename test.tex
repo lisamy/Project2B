@@ -1,7 +1,10 @@
 \documentclass[10pt]{article}
 
 \newcommand{\boldit}[1]{\textbf{\textit{#1}}}
+\usepackage{xcolor}
 \usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{mindmap}
 
 \begin{document}
 
@@ -24,8 +27,16 @@ Testing attempt 1
 \end{itemize}
 New line written
 
-New line by the master branch
+\textcolor{red}{New line} by the branch master
 
+\begin{tikzpicture}
+\node{Domains of Computing}
+     child { node {Computer Science} }
+     child { node {Data Science} }
+     child { node {Software Development} }
+     child { node {Information System} }
+;
+\end{tikzpicture}
 
 A line written by the new branch
 
